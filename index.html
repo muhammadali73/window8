@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/30bec55b03.js" crossorigin="anonymous"></script>
     <title>Window 8</title>
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             color: white;
             font-size: 1.02rem;
+            font-family: Arial, Helvetica, sans-serif;
         }
-        body{
+
+        body {
             background-color: #001940;
         }
-        h1{
-           font-size: 3rem;
-           font-weight: lighter;
-           margin: 32px 0 0 32px;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: lighter;
+            margin: 32px 0 0 32px;
         }
-        .container{
+
+        .container {
             background-color: #001940;
             display: grid;
-            grid-template-columns: 150px 150px 150px 150px 150px 150px ;
+            grid-template-columns: 150px 150px 150px 150px 150px 150px;
             grid-template-rows: 120px 120px 120px 120px;
             width: 1000px;
             height: 500px;
@@ -31,155 +37,257 @@
             margin: auto;
             margin-top: 20px;
         }
-        .box1{
+
+        .box1 {
             background-color: #2d8aef;
+            cursor: pointer;
         }
-        .box2{
+
+        .box2 {
             background-color: #6db91d;
+            cursor: pointer;
         }
-        .box3{
+
+        .box3 {
             background-color: #b11a41;
             grid-column: 3/5;
+            cursor: pointer;
         }
-        .box4{
+
+        .box4 {
             background-color: #009618;
             grid-column: 5/7;
+            cursor: pointer;
         }
-        .box5{
+
+        .box5 {
             background-color: #613cbd;
+            cursor: pointer;
         }
-        .box6{
+
+        .box6 {
             background-color: #2b88ef;
+            cursor: pointer;
         }
-        .box7{
+
+        .box7 {
             background-color: #603cba;
+            cursor: pointer;
             grid-column: 3/5;
         }
-        .box8{
+
+        .box8 {
             background-color: #db542d;
             grid-column: 5/7;
+            cursor: pointer;
         }
-        .box9{
+
+        .box9 {
             background-color: #db542d;
             grid-column: 1/3;
+            cursor: pointer;
         }
-        .box10{
+
+        .box10 {
             background-color: #00a219;
             grid-column: 3/5;
+            cursor: pointer;
         }
-        .box11{
+
+        .box11 {
             background-color: black;
+            cursor: pointer;
         }
-        .box12{
+
+        .box12 {
             background-color: #2d87ef;
+            cursor: pointer;
         }
-        .box13{
+
+        .box13 {
             background-color: #1d7983;
             grid-column: 1/3;
+            cursor: pointer;
         }
-        .box14{
+
+        .box14 {
             background-color: #2d87f1;
             grid-column: 3/5;
+            cursor: pointer;
         }
-        .box15{
+
+        .box15 {
             background-color: #bb1d4b;
+            cursor: pointer;
         }
-        .box16{
+
+        .box16 {
             background-color: #6cb81c;
+            cursor: pointer;
         }
-        .fa-solid,.fa-brands{
-            color: white;
-            font-size: 2rem;
-            z-index: 1000;
+        .box:hover{
+            transform: rotateX(335deg);
         }
-        .img1,.img2,.img5,.img6,.img11,.img12,.img15,.img16{
-            height: 70px;
-            width: 70px;
-            position: relative; 
-            top: 20px;
-            left: 40px;
+
+        .fa-0 {
+            font-size: 70px;
+            position: relative;
+            top: 24px;
+            left: 100px;
         }
-        .img3,.img4,.img7,.img8,.img9,.img10,.img13,.img14{
-            height: 70px;
-            width: 70px;
-            position: relative; 
-            top: 20px;
-            left: 120px;
+        .fa-0:hover{
+            text-shadow: 10px 10px 20px black;
         }
-        p{
+
+        .fa-1 {
+            font-size: 70px;
+            position: relative;
+            top: 24px;
+            left: 104px;
+        }
+        .fa-1:hover{
+            text-shadow: 10px 10px 20px black;
+        }
+
+        .fa1 {
+            font-size: 55px;
+            position: relative;
+            top: 33px;
+            left: 47px;
+        }
+        .fa1:hover{
+            text-shadow: 10px 10px 20px black;
+        }
+
+        .fa2 {
+            font-size: 70px;
+            position: relative;
+            top: 24px;
+            left: 118px;
+        }
+        .fa2:hover{
+            text-shadow: 10px 10px 20px black;
+        }
+
+        .p1 {
             position: relative;
             top: 22px;
             left: 5px;
         }
+
+        .p2 {
+            position: relative;
+            top: 44px;
+            left: 5px;
+            font-size: 15px;
+        }
+
+        .fa-internet-explorer {
+            font-size: 55px;
+            position: relative;
+            top: 28px;
+            left: 44px;
+        }
+        .fa-internet-explorer:hover{
+            text-shadow: 10px 10px 20px black;
+        }
+
+        .fa-bag-shopping {
+
+            font-size: 55px;
+            position: relative;
+            top: 30px;
+            left: 52px;
+        }
+        .fa-bag-shopping:hover{
+            text-shadow: 10px 10px 20px black;
+        }
+
+        .fa-gamepad {
+
+            font-size: 55px;
+            position: relative;
+            top: 33px;
+            left: 40px;
+        }
+        .fa-gamepad:hover{
+            text-shadow: 10px 10px 20px black;
+        }
+        .fa-bowling-ball:hover{
+            text-shadow: 5px 5px 10px grey;
+        }
+
     </style>
 </head>
+
 <body>
-        <h1 class="start" >Start</h1>
-        <div class="container">
-            <div class="box box1">
-                <img class="img1" src="https://cdn.pixabay.com/photo/2013/07/13/12/34/handbag-159884_1280.png" alt="">
-                <p>Shopping</p>
-            </div>
-            <div class="box box2">
-                <img class="img2" src="https://cdn.pixabay.com/photo/2013/07/13/01/19/game-controller-155530_640.png" alt="">
-                <p>Live Games</p>
-            </div>
-            <div class="box box3">
-                <img class="img3" src="https://cdn.pixabay.com/photo/2016/03/31/17/33/avatar-1293744_640.png" alt="">
-                <p>Photos</p>
-            </div>
-            <div class="box box4">
-                <img class="img4" src="https://cdn.pixabay.com/photo/2017/07/28/01/40/expression-2547407_640.png" alt="">
-                <p>Calendar</p>
-            </div>
-            <div class="box box5">
-                <img class="img5" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_640.png" alt="">
-                <p>Maps</p>
-            </div>
-            <div class="box box6">
-                <img class="img6" src="https://cdn.pixabay.com/photo/2015/08/13/16/50/chrome-887242_640.png" alt="">
-                <p>Internet Explorer</p>
-            </div>
-            <div class="box box7">
-                <img class="img7" src="https://cdn.pixabay.com/photo/2012/04/05/02/04/speech-25916_640.png" alt="">
-                <p>Messaging</p>
-            </div>
-            <div class="box box8">
-                <img class="img8" src="https://cdn.pixabay.com/photo/2016/12/19/10/16/hands-1917895_640.png" alt="">
-                <p>People</p>
-            </div>
-            <div class="box box9">
-                <img class="img9" src="https://cdn.pixabay.com/photo/2014/04/03/11/07/clapperboard-311792_640.png" alt="">
-                <p>Viedos</p>
-            </div>
-            <div class="box box10">
-                <img class="img10" src="https://cdn.pixabay.com/photo/2023/06/09/19/37/letter-8052497_640.png" alt="">
-                <p>Mail</p>
-            </div>
-            <div class="box box11">
-                <img class="img11" src="https://cdn.pixabay.com/photo/2013/07/13/10/51/bowling-157933_1280.png" alt="">
-                <p>Pinball Fx2</p>
-            </div>
-            <div class="box box12">
-                <img class="img12" src="https://cdn.pixabay.com/photo/2013/07/13/12/11/ace-159364_640.png" alt="">
-                <p>Solitaire</p>
-            </div>
-            <div class="box box13">
-                <img class="img13" src="https://cdn.pixabay.com/photo/2014/04/02/10/47/computer-304585_640.png" alt="">
-                <p>Desktop</p>
-            </div>
-            <div class="box box14">
-                <img class="img14" src="https://cdn.pixabay.com/photo/2016/09/12/17/27/fractal-1665319_640.png" alt="">
-                <p>Weather</p>
-            </div>
-            <div class="box box15">
-                <img class="img15" src="https://cdn.pixabay.com/photo/2013/07/13/11/41/lens-158471_640.png" alt="">
-                <p>Camera</p>
-            </div>
-            <div class="box box16">
-                <img class="img16" src="https://cdn.pixabay.com/photo/2019/10/12/14/57/game-controller-4544038_640.png" alt="">
-                <p>Xbox</p>
-            </div>
+    <h1 class="start">Start</h1>
+    <div class="container">
+        <div class="box box1">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="p2">Shopping</p>
         </div>
+        <div class="box box2">
+            <i class="fa-solid fa-gamepad"></i>
+            <p class="p2">Live Games</p>
+        </div>
+        <div class="box box3">
+            <i class="fa-regular fa-id-badge fa2"></i>
+            <p class="p1">Photos</p>
+        </div>
+        <div class="box box4">
+            <i class="fa-solid fa-0"></i> <i class="fa-solid fa-1"></i>
+            <p class="p1">Calendar</p>
+        </div>
+        <div class="box box5">
+            <i class="fa-solid fa-map fa1"></i>
+            <p class="p2">Maps</p>
+        </div>
+        <div class="box box6">
+            <i class="fa-brands fa-internet-explorer"></i>
+            <p class="p2">Internet Explorer</p>
+        </div>
+        <div class="box box7">
+            <i class="fa-solid fa-message fa2"></i>
+            <p class="p1">Messaging</p>
+        </div>
+        <div class="box box8">
+            <i class="fa-solid fa-people-group fa2"></i>
+            <p class="p1">People</p>
+        </div>
+        <div class="box box9">
+            <i class="fa-solid fa-circle-play fa2"></i>
+            <p class="p1">Viedos</p>
+        </div>
+        <div class="box box10">
+            <i class="fa-solid fa-envelope fa2"></i>
+            <p class="p1">Mail</p>
+        </div>
+        <div class="box box11">
+            <i class="fa-solid fa-bowling-ball fa1"></i>
+            <p class="p2">Pinball Fx2</p>
+        </div>
+        <div class="box box12">
+            <i class="fa-solid fa-chess-board fa1"></i>
+            <p class="p2">Solitaire</p>
+        </div>
+        <div class="box box13">
+            <i class="fa-solid fa-fish-fins fa2"></i>
+            <p class="p1">Desktop</p>
+        </div>
+        <div class="box box14">
+            <i class="fa-solid fa-sun fa2"></i>
+            <p class="p1">Weather</p>
+        </div>
+        <div class="box box15">
+            <i class="fa-solid fa-camera fa1"></i>
+            <p class="p2">Camera</p>
+        </div>
+        <div class="box box16">
+            <i class="fa-brands fa-xbox fa1"></i>
+            <p class="p2">Xbox</p>
+        </div>
+    </div>
 </body>
+
 </html>
